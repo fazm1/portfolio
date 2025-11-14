@@ -7,12 +7,12 @@
     <title>About Me - Farid M. Azzam</title>
     <script>
         // Prevent flash of unstyled content by setting theme immediately
-        (function() {
+        (function () {
             const theme = localStorage.getItem('theme') || 'light';
             if (theme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 // Update logo for dark mode
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     const logos = document.querySelectorAll('.logo img');
                     logos.forEach(logo => {
                         const currentSrc = logo.getAttribute('src');
@@ -42,7 +42,8 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button></li>
+                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,32 +51,72 @@
     <main class="Card">
         <section>
             <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science and Software Engineering <strong>The British University in Egypt</strong> and <strong>London South Bank University</strong>.</p>
+            <p>Bachelor of Science in Computer Science and Software Engineering <strong>The British University in
+                    Egypt</strong> and <strong>London South Bank University</strong>.</p>
             <p>Class of 2023</p>
 
             <div class="education-logos">
                 <img src="assets/images/bue.png" alt="BUE Logo" width="150">
                 <img src="assets/images/lsbu.webp" alt="LSBU Logo" width="150">
             </div>
-           
+
         </section>
 
         <section>
             <h2>Work Experience</h2>
-            
+
             <div class="work-experience">
                 <div class="job-entry">
                     <div class="job-header">
                         <h3>Senior Software Engineer</h3>
                         <div class="job-meta">
                             <span class="company">Cloudilic</span>
-                            <span class="date">Aug 2025 - Present</span>
+                            <span class="date">Aug 2025 - Nov 2025</span>
                             <span class="location">Cairo, Egypt</span>
                         </div>
                     </div>
                     <ul class="job-responsibilities">
-                        <li>Gained expertise in AI and LLM integrations with LangChain framework, building various production-grade prototypes that are ready to use.</li>
-                        <li>Building the AI Agent functionality for the company's flagship product, Dragify, which enhanced workflow automation by 50%.</li>
+                        <li>Designed and implemented the core AI Agent architecture, using LangChain and LangGraph, for
+                            Dragify (Cloudilic flagship),
+                            including multi-agent orchestration, long-term memory, ReAct-style reasoning, and scalable
+                            LLM execution pipelines using OpenAI and Gemini.</li>
+
+                        <li>Delivered end-to-end integration of the AI Agent with 20+ automation modules (OCR, Gmail,
+                            Slack, RAG,
+                            Databases, Drive, Vision, Web Search, Custom API), enabling fully autonomous workflows and
+                            significantly
+                            improving system capability.</li>
+
+                        <li>Built a secure, production-grade Slack Trigger & Slack Webhook system, including secure
+                            signing verification,
+                            link generation, endpoint architecture, and real-time workflow execution and created
+                            reusable infrastructure for
+                            all triggers to unify future integrations across tools.</li>
+
+                        <li>Engineered the main workflow infrastructure including the Variables System for workflow
+                            automation (workflow
+                            variables, global variables, block-level variables), with compiler-like parsing,
+                            drag-and-drop insertion, syntax
+                            highlighting, dependency detection, and real-time state synchronization.</li>
+
+                        <li>Developed and shipped the Start Function Block and workflow execution engine, enabling
+                            chat-based workflow
+                            invocation, dynamic node/edge validation, custom inputs, and tight integration with the AI
+                            Agent.</li>
+
+                        <li>Improved backend reliability and performance by implementing caching layers, API call
+                            reduction, recursive-
+                            execution prevention, and execution-flow optimizations across the automation engine.</li>
+
+                        <li>Implemented and delivered the User Groups & Permissions system with role-based access
+                            control (RBAC),
+                            workflow-level authorization, invitation lifecycle management, email-based invites, and
+                            plan-based usage limits.</li>
+
+                        <li>Contributed to organization-wide AI initiatives including Pharmacy AI Agents (clinical
+                            reasoning, safety checks)
+                            delivering custom tools, system design documentation, and cross-team collaborations.</li>
+
                     </ul>
                 </div>
 
@@ -89,12 +130,23 @@
                         </div>
                     </div>
                     <ul class="job-responsibilities">
-                        <li>Spearheaded the development of a real estate management dashboard using React, Mantine UI, and Recharts, resulting in a 40% improvement in user engagement.</li>
-                        <li>Implemented structured workflows using Jira, leading the frontend team to achieve a 50% increase in project delivery speed.</li>
-                        <li>Designed a scalable design system of reusable components using CSS Modules and React Context API for global state management, enhancing maintainability and cutting feature development time by 30%.</li>
-                        <li>Enhanced frontend performance by implementing code splitting, lazy loading, and bundle optimization, and caching using React Tenstack Query leading to a 35% reduction in initial page load times.</li>
-                        <li>Developed and maintained backend features using JWT for secure token-based authentication via HTTP-only cookies, OTP-based user verification, and password reset flows using Nodemailer and encrypted OTP tokens with proper model associations.</li>
-                        <li>Deployed backend on DigitalOcean using PM2 for process management and Nginx as a reverse proxy, including configuration for static asset delivery and secure HTTPS setup, while enhancing server performance by 45% by adding additional swap memory to deployment server.</li>
+                        <li>Spearheaded the development of a real estate management dashboard using React, Mantine UI,
+                            and Recharts, resulting in a 40% improvement in user engagement.</li>
+                        <li>Implemented structured workflows using Jira, leading the frontend team to achieve a 50%
+                            increase in project delivery speed.</li>
+                        <li>Designed a scalable design system of reusable components using CSS Modules and React Context
+                            API for global state management, enhancing maintainability and cutting feature development
+                            time by 30%.</li>
+                        <li>Enhanced frontend performance by implementing code splitting, lazy loading, and bundle
+                            optimization, and caching using React Tenstack Query leading to a 35% reduction in initial
+                            page load times.</li>
+                        <li>Developed and maintained backend features using JWT for secure token-based authentication
+                            via HTTP-only cookies, OTP-based user verification, and password reset flows using
+                            Nodemailer and encrypted OTP tokens with proper model associations.</li>
+                        <li>Deployed backend on DigitalOcean using PM2 for process management and Nginx as a reverse
+                            proxy, including configuration for static asset delivery and secure HTTPS setup, while
+                            enhancing server performance by 45% by adding additional swap memory to deployment server.
+                        </li>
                     </ul>
                 </div>
 
@@ -127,7 +179,8 @@
                     <ul class="job-responsibilities">
                         <li>Applied control programming concepts using Lua to automate system behaviors.</li>
                         <li>Designed DSP systems and graphical user interfaces in Q-SYS Designer software.</li>
-                        <li>Achieved Q-SYS Control 101 and Q-SYS Level 1 certifications, demonstrating core system integration skills.</li>
+                        <li>Achieved Q-SYS Control 101 and Q-SYS Level 1 certifications, demonstrating core system
+                            integration skills.</li>
                     </ul>
                 </div>
 
@@ -141,8 +194,10 @@
                         </div>
                     </div>
                     <ul class="job-responsibilities">
-                        <li>Maintained and enhanced web applications, resolving PHP syntax and type-conversion issues.</li>
-                        <li>Diagnosed and resolved administrator-side database retrieval problems in collaboration with the development team.</li>
+                        <li>Maintained and enhanced web applications, resolving PHP syntax and type-conversion issues.
+                        </li>
+                        <li>Diagnosed and resolved administrator-side database retrieval problems in collaboration with
+                            the development team.</li>
                         <li>Wrote and tested code to fix minor website interoperability and user experience issues.</li>
                     </ul>
                 </div>
@@ -152,16 +207,27 @@
         <section>
             <h2>Certifications</h2>
             <ul>
-                <li><a href="https://aitbeg.com/verify-certification?cn=SE-WD-N-220625055333">Back-end Development (Node.JS) Training: AITB</a></li>
-                <li><a href="https://aitbeg.com/verify-certification?cn=DT-OT-OT-221006063622">Internet of Things (IoT) Training: AITB</a></li>
-                <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523745781/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Level 1 Training: QSC</a></li>
-                <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523684935/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Control 101 Training: QSC</a></li>
-                <li><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=194868&code=ELlmM7QIQw&qrcode=1">ReactJS: ITIMOOCA</a></li>
+                <li><a href="https://aitbeg.com/verify-certification?cn=SE-WD-N-220625055333">Back-end Development
+                        (Node.JS) Training: AITB</a></li>
+                <li><a href="https://aitbeg.com/verify-certification?cn=DT-OT-OT-221006063622">Internet of Things (IoT)
+                        Training: AITB</a></li>
+                <li><a
+                        href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523745781/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS
+                        Level 1 Training: QSC</a></li>
+                <li><a
+                        href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523684935/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS
+                        Control 101 Training: QSC</a></li>
+                <li><a
+                        href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=194868&code=ELlmM7QIQw&qrcode=1">ReactJS:
+                        ITIMOOCA</a></li>
                 <li><a href="https://www.hackerrank.com/certificates/44f79117d59e">SQL (Basic): Hackerrank</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/2ef1613717ac">SQL (Intermediate): Hackerrank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/2ef1613717ac">SQL (Intermediate): Hackerrank</a>
+                </li>
                 <li><a href="https://www.hackerrank.com/certificates/615956ee361c">SQL (Advanced): Hackerrank</a></li>
-                <li><a href="https://www.hackerrank.com/profile/farid_azzam_2001">SQL (5 Stars Badge): Hackerrank</a></li>
-                <li><a href="https://www.credly.com/badges/cbd5df76-8b74-4aff-a66d-07e3ee497145/public_url">Introduction to Data Science: Cisco</a></li>
+                <li><a href="https://www.hackerrank.com/profile/farid_azzam_2001">SQL (5 Stars Badge): Hackerrank</a>
+                </li>
+                <li><a href="https://www.credly.com/badges/cbd5df76-8b74-4aff-a66d-07e3ee497145/public_url">Introduction
+                        to Data Science: Cisco</a></li>
             </ul>
         </section>
     </main>

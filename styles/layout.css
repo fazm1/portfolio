@@ -82,12 +82,12 @@ footer p {
     font-size: 0.9rem;
 }
 
-h1, h2, h3 {
+ h2, h3 {
     margin-bottom: 1rem;
 }
 
 h1 {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 h2 {

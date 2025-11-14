@@ -7,12 +7,12 @@
     <title>Projects - Farid M. Azzam</title>
     <script>
         // Prevent flash of unstyled content by setting theme immediately
-        (function() {
+        (function () {
             const theme = localStorage.getItem('theme') || 'light';
             if (theme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 // Update logo for dark mode
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     const logos = document.querySelectorAll('.logo img');
                     logos.forEach(logo => {
                         const currentSrc = logo.getAttribute('src');
@@ -42,7 +42,8 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button></li>
+                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -51,50 +52,64 @@
         <div class="Card">
 
             <div class="project">
-                <h2><b>Dragify AI (n8n clone)</b></h2>
-                <p>A workflow automation platform that involves a plethora of nodes/function blocks. Developed multiple function blocks, including web search, slack trigger, and the AI Agent function block which effectively uses all available nodes in response to user prompts.</p>
+                <h2><b>Dragify AI</b></h2>
+                <p>A workflow automation platform that involves a plethora of nodes/function blocks. Developed multiple
+                    function blocks, including web search, slack trigger, and the AI Agent function block which
+                    effectively uses all available nodes in response to user prompts.</p>
                 <p><b>Tech stack:</b> <i>ReactJS</i>, <i>NextJS</i>, <i>NodeJS (Express.js)</i></p>
-                <p><b>Link:</b> <a href="https://dragify.ai/" target="_blank" rel="noopener noreferrer">https://dragify.ai/</a></p>
+                <p><b>Link:</b> <a href="https://dragify.ai/" target="_blank"
+                        rel="noopener noreferrer">https://dragify.ai/</a></p>
             </div>
 
             <div class="project">
-                <h2><b>Workflow Automation using RAG (n8n clone)</b></h2>
-                <p>A small workflow automation platform that incorporates the usage of Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) to provide effective summaries of uploaded documents.</p>
+                <h2><b>RAG Workflow Builder (n8n clone)</b></h2>
+                <p>A small workflow automation platform that incorporates the usage of Large Language Models (LLMs) and
+                    Retrieval Augmented Generation (RAG) to provide effective summaries of uploaded documents.</p>
                 <p><b>Tech stack:</b> <i>ReactJS</i>, <i>NodeJS (Express.js)</i></p>
-                <p><b>Link:</b> <a href="https://rag-app-by-farid.netlify.app/" target="_blank" rel="noopener noreferrer">https://rag-app-by-farid.netlify.app/</a></p>
-            </div>
-
-            <div class="project">
-                <h2><b>REM Waste Management Frontend</b></h2>
-                <p>A modern React application featuring an elegant, responsive carousel for skip selection, aimed at improving user experience.</p>
-                <p><b>Tech stack:</b> <i>ReactJS</i></p>
-                <p><b>Link:</b> <a href="https://remwasteprojectbyfarid.netlify.app/" target="_blank" rel="noopener noreferrer">https://remwasteprojectbyfarid.netlify.app/</a></p>
-            </div>
-
-            <div class="project">
-                <h2><b>Real Estate CRM & ERP</b></h2>
-                <p>A platform for managing real estate brokers, listings, and contracts, featuring sophisticated KPIs and an elegant UI.</p>
-                <p><b>Tech stack:</b> <i>ReactJS</i>, <i>PHP Laravel</i></p>
-                <p><b>Link:</b> <a href="https://valuerealestate.netlify.app/" target="_blank" rel="noopener noreferrer">https://valuerealestate.netlify.app/</a></p>
+                <p><b>Link:</b> <a href="https://rag-app-by-farid.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">https://rag-app-by-farid.netlify.app/</a></p>
             </div>
 
             <div class="project">
                 <h2><b>Leila Residential Compound</b></h2>
-                <p>An application for residents to submit complaints to maintenance/security departments, allowing them to track the status of their complaints.</p>
+                <p>An application for residents to submit complaints to maintenance/security departments, allowing them
+                    to track the status of their complaints.</p>
                 <p><b>Tech stack:</b> <i>ReactJS</i>, <i>Firebase</i></p>
-                <p><b>Link:</b> <a href="https://leilacompound.netlify.app/" target="_blank" rel="noopener noreferrer">https://leilacompound.netlify.app/</a></p>
+                <p><b>Link:</b> <a href="https://leilacompound.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">https://leilacompound.netlify.app/</a></p>
             </div>
 
             <div class="project">
-                <h2><b>Scandiweb Job Application Test-Task (E-commerce)</b></h2>
-                <p>Developed an e-commerce web application with specific requirements using ReactJS, PHP, MySQL, and GraphQL.</p>
-                <p><b>Tech stack:</b> <i>ReactJS</i>, <i>PHP Vanilla</i></p>
-                <p><b>Link (expired backend):</b> <a href="https://fazm1.github.io/ecomerceReactJS/" target="_blank" rel="noopener noreferrer">https://fazm1.github.io/ecomerceReactJS/</a></p>
+                <h2><b>Real Estate CRM & ERP</b></h2>
+                <p>A platform for managing real estate brokers, listings, and contracts, featuring sophisticated KPIs
+                    and an elegant UI.</p>
+                <p><b>Tech stack:</b> <i>ReactJS</i>, <i>PHP Laravel</i></p>
+                <p><b>Link:</b> <a href="https://valuerealestate.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">https://valuerealestate.netlify.app/</a></p>
+            </div>
+
+            <div class="project">
+                <h2><b>REM Waste Management Frontend</b></h2>
+                <p>A modern React application featuring an elegant, responsive carousel for skip selection, aimed at
+                    improving user experience.</p>
+                <p><b>Tech stack:</b> <i>ReactJS</i></p>
+                <p><b>Link:</b> <a href="https://remwasteprojectbyfarid.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">https://remwasteprojectbyfarid.netlify.app/</a></p>
+            </div>
+
+
+            <div class="project">
+                <h2><b>E-commerce Application</b></h2>
+                <p>A custom e-commerce web application using GraphQL for the API layer.</p>
+                <p><b>Tech stack:</b> <i>ReactJS</i>,<i>NodeJS (Express.js)</i></p>
+                <p><b>Link:</b> <a href="https://fazm1.github.io/ecomerceReactJS/" target="_blank"
+                        rel="noopener noreferrer">https://fazm1.github.io/ecomerceReactJS/</a></p>
             </div>
 
             <div class="project">
                 <h2><b>Other Projects</b></h2>
-                <p><b>Github:</b> <a href="https://github.com/fazm1" target="_blank" rel="noopener noreferrer">https://github.com/fazm1</a></p>
+                <p><b>Github:</b> <a href="https://github.com/fazm1" target="_blank"
+                        rel="noopener noreferrer">https://github.com/fazm1</a></p>
             </div>
         </div>
     </main>

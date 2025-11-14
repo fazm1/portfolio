@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing projects, skills, and contact information.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "npm run build-css && npm run build-js",
+    "build-css": "postcss styles/base.css -o styles/style.css",
+    "build-js": "webpack scripts/main.js -o scripts/bundle.js"
+  },
+  "author": "Farid M. Azzam",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "postcss": "^8.3.6",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.6"
+  }
+}

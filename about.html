@@ -1,78 +1,176 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-        <title>Farid M. Azzam</title>
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon" href="images/1.png">
-    </head>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Farid M. Azzam</title>
+    <script>
+        // Prevent flash of unstyled content by setting theme immediately
+        (function() {
+            const theme = localStorage.getItem('theme') || 'light';
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                // Update logo for dark mode
+                document.addEventListener('DOMContentLoaded', function() {
+                    const logos = document.querySelectorAll('.logo img');
+                    logos.forEach(logo => {
+                        const currentSrc = logo.getAttribute('src');
+                        if (currentSrc && currentSrc.includes('1.png')) {
+                            logo.setAttribute('src', currentSrc.replace('1.png', '2.png'));
+                        }
+                    });
+                });
+            }
+        })();
+    </script>
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/layout.css" rel="stylesheet">
+    <link href="styles/components.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/1.png">
+</head>
+
+<body>
+    <header>
         <nav class="navbar">
-            <a href ="index.html">
-                <div class="logo">
-                    <img src="images/1.png" width="70px" height="70px">
-                    <div class="logoText">FARID AZZAM</div>
-                </div></a>
+            <a href="index.html" class="logo">
+                <img src="assets/images/1.png" alt="Logo" width="70" height="70">
+                <h1>FARID AZZAM</h1>
+            </a>
             <ul>
-                
-                <li><a href ="index.html">HOME</a></li>
-                <li><a href ="about.html">ABOUT</a></li>
-                <li><a href ="projects.html">PROJECTS</a></li>
-                <li><a href ="contact.html">CONTACT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button></li>
             </ul>
         </nav>
+    </header>
 
-        <div class="Card">
+    <main class="Card">
+        <section>
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science and Software Engineering <strong>The British University in Egypt</strong> and <strong>London South Bank University</strong>.</p>
+            <p>Class of 2023</p>
+
+            <div class="education-logos">
+                <img src="assets/images/bue.png" alt="BUE Logo" width="150">
+                <img src="assets/images/lsbu.webp" alt="LSBU Logo" width="150">
+            </div>
+           
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
             
-            
-
-
-            <h1>ABOUT ME</h1>
-            <h2>EDUCATION:</h2>
-            <h3>I graduated in 2023 from <b>The British University in Egypt</b>,
-                faculty of Informatics & Computer Science, majored in Software Engineering and received Second Class Honours from 
-                <b>London South Bank University</b>.
-                <div class="education1">
-                <img src="images/bue.png" width="150px">
-                <img src="images/lsbu.webp" width="150px">
+            <div class="work-experience">
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>Senior Software Engineer</h3>
+                        <div class="job-meta">
+                            <span class="company">Cloudilic</span>
+                            <span class="date">Aug 2025 - Present</span>
+                            <span class="location">Cairo, Egypt</span>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Gained expertise in AI and LLM integrations with LangChain framework, building various production-grade prototypes that are ready to use.</li>
+                        <li>Building the AI Agent functionality for the company's flagship product, Dragify, which enhanced workflow automation by 50%.</li>
+                    </ul>
                 </div>
-                
-                <br>
-                <br>
-                In 2024, I started my journey in the <b>Information
-                Technology Institute</b> in the track of Full Stack Web Development using Python
-                to further solidify and bridge my academic knowledge with my professional skills. 
-                <div class="education2"><img src="images/iti.png" width="150px"></div>
-            </h3>
-            
-            <h2>WORK EXPERIENCE:</h2>
-            <h3>After graduation, I worked breifly as a <b>PHP Developer</b> for a Romanian credit company known as 
-                <b>123Credit.ro</b>. Working there gave me a solid foundation on the professional application of all previous
-                knowledge gained during college as well as many  importnant skills including maintaining web applications,
-                website version control, and effective collaboration with development team.
-            </h3>          
-            <h2>CERTIFICATIONS:</h2>
-            <h3>
-                <uo>
-                    <li><a href="https://aitbeg.com/verify-certification?cn=SE-WD-N-220625055333">Back-end Development (Node.JS) Training:</a><b>AITB</b></li>
-                    <li><a href="https://aitbeg.com/verify-certification?cn=DT-OT-OT-221006063622">Internet of Things (IoT) Training:</a> <b>AITB</b></li>
-                    <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523745781/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Level 1 Training:</a> <b>QSC</b></li>
-                    <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523684935/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Control 101 Training:</a> <b>QSC</b></li>
-                    <li><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=194868&code=ELlmM7QIQw&qrcode=1">ReactJS:</a> <b>ITIMOOCA</b></li>
-                    <li><a href="https://www.hackerrank.com/certificates/44f79117d59e">SQL (Basic):</a> <b>Hackerrank</b></li>
-                    <li><a href="https://www.hackerrank.com/certificates/2ef1613717ac">SQL (Intermediate):</a> <b>Hackerrank</b></li>
-                    <li><a href="https://www.hackerrank.com/certificates/615956ee361c">SQL (Advanced):</a> <b>Hackerrank</b></li>
-                    <li><a href="https://www.hackerrank.com/profile/farid_azzam_2001">SQL (5 Stars Badge):</a> <b>Hackerrank</b></li>
-                    <li><a href="https://www.credly.com/badges/cbd5df76-8b74-4aff-a66d-07e3ee497145/public_url">Introduction to Data Science:</a> <b>Cisco</b></li>
-                </uo>
-            </h3>            
-        </div>
-        
-        
 
-        
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>Software Engineer</h3>
+                        <div class="job-meta">
+                            <span class="company">Value Business Planning</span>
+                            <span class="date">Feb 2025 - Aug 2025</span>
+                            <span class="location">Cairo, Egypt</span>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Spearheaded the development of a real estate management dashboard using React, Mantine UI, and Recharts, resulting in a 40% improvement in user engagement.</li>
+                        <li>Implemented structured workflows using Jira, leading the frontend team to achieve a 50% increase in project delivery speed.</li>
+                        <li>Designed a scalable design system of reusable components using CSS Modules and React Context API for global state management, enhancing maintainability and cutting feature development time by 30%.</li>
+                        <li>Enhanced frontend performance by implementing code splitting, lazy loading, and bundle optimization, and caching using React Tenstack Query leading to a 35% reduction in initial page load times.</li>
+                        <li>Developed and maintained backend features using JWT for secure token-based authentication via HTTP-only cookies, OTP-based user verification, and password reset flows using Nodemailer and encrypted OTP tokens with proper model associations.</li>
+                        <li>Deployed backend on DigitalOcean using PM2 for process management and Nginx as a reverse proxy, including configuration for static asset delivery and secure HTTPS setup, while enhancing server performance by 45% by adding additional swap memory to deployment server.</li>
+                    </ul>
+                </div>
 
-    </body>
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>Fullstack Development Intern</h3>
+                        <div class="job-meta">
+                            <span class="company">Information Technology Institute</span>
+                            <span class="date">Nov 2024 - Feb 2025</span>
+                            <span class="location">Cairo, Egypt</span>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Gained expertise in version control systems using Git for collaborative development.</li>
+                        <li>Built various full-stack applications using ReactJS, HTML5/CSS3, and JavaScript.</li>
+                        <li>Acquired hands-on experience in Linux system administration and Bash scripting.</li>
+                        <li>Mastered PostgreSQL and MySQL database querying and relational database design.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>Programming & Solutions Developer Intern</h3>
+                        <div class="job-meta">
+                            <span class="company">Timeline EG</span>
+                            <span class="date">Aug 2024 - Sep 2024</span>
+                            <span class="location">Cairo, Egypt</span>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Applied control programming concepts using Lua to automate system behaviors.</li>
+                        <li>Designed DSP systems and graphical user interfaces in Q-SYS Designer software.</li>
+                        <li>Achieved Q-SYS Control 101 and Q-SYS Level 1 certifications, demonstrating core system integration skills.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <div class="job-header">
+                        <h3>PHP Developer</h3>
+                        <div class="job-meta">
+                            <span class="company">123Credit.ro</span>
+                            <span class="date">Sep 2023 - Oct 2023</span>
+                            <span class="location">Bucharest, Romania</span>
+                        </div>
+                    </div>
+                    <ul class="job-responsibilities">
+                        <li>Maintained and enhanced web applications, resolving PHP syntax and type-conversion issues.</li>
+                        <li>Diagnosed and resolved administrator-side database retrieval problems in collaboration with the development team.</li>
+                        <li>Wrote and tested code to fix minor website interoperability and user experience issues.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="https://aitbeg.com/verify-certification?cn=SE-WD-N-220625055333">Back-end Development (Node.JS) Training: AITB</a></li>
+                <li><a href="https://aitbeg.com/verify-certification?cn=DT-OT-OT-221006063622">Internet of Things (IoT) Training: AITB</a></li>
+                <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523745781/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Level 1 Training: QSC</a></li>
+                <li><a href="https://www.linkedin.com/in/farid-azzam-2882051b2/details/certifications/1727523684935/single-media-viewer/?profileId=ACoAADGCG0gB11HBF1uLkaKNPuH6zAHgXUK7l1g">Q-SYS Control 101 Training: QSC</a></li>
+                <li><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=194868&code=ELlmM7QIQw&qrcode=1">ReactJS: ITIMOOCA</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/44f79117d59e">SQL (Basic): Hackerrank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/2ef1613717ac">SQL (Intermediate): Hackerrank</a></li>
+                <li><a href="https://www.hackerrank.com/certificates/615956ee361c">SQL (Advanced): Hackerrank</a></li>
+                <li><a href="https://www.hackerrank.com/profile/farid_azzam_2001">SQL (5 Stars Badge): Hackerrank</a></li>
+                <li><a href="https://www.credly.com/badges/cbd5df76-8b74-4aff-a66d-07e3ee497145/public_url">Introduction to Data Science: Cisco</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Farid M. Azzam. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
 </html>

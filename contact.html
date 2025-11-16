@@ -7,12 +7,12 @@
     <title>Contact - Farid M. Azzam</title>
     <script>
         // Prevent flash of unstyled content by setting theme immediately
-        (function() {
+        (function () {
             const theme = localStorage.getItem('theme') || 'light';
             if (theme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 // Update logo for dark mode
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     const logos = document.querySelectorAll('.logo img');
                     logos.forEach(logo => {
                         const currentSrc = logo.getAttribute('src');
@@ -42,38 +42,41 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button></li>
+                <li><button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="Card">
-        <h2>Feel free to reach out to me via:</h2>
-        
-        <div class="contact-info">
-            <div class="contact-item-email">
-                <strong>Email:</strong>
-                <a href="mailto:farid.azzam.2001@gmail.com">farid.azzam.2001@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <strong>Phone/WhatsApp:</strong>
-                <span>+201110366720</span>
-            </div>
-        </div>
+    <main>
+        <div class="Card">
+            <h2>Feel free to reach out via:</h2>
 
-        <div class="socialmedia" style="margin-top: 2rem;">
-            <h2 style="width: 100%; margin-bottom: 1rem; border-bottom: none; padding-bottom: 0;">Connect with me on social media:</h2>
-            <a href="https://www.linkedin.com/in/farid-azzam-2882051b2/" aria-label="LinkedIn" title="LinkedIn">
-                <img src="assets/images/linkedin.svg" alt="LinkedIn" width="30">
-            </a>
-            <a href="https://x.com/fazm136" aria-label="X (Twitter)" title="X (Twitter)">
-                <img src="assets/images/x.svg" alt="X" width="30">
-            </a>
-            <a href="https://github.com/fazm1" aria-label="GitHub" title="GitHub">
-                <img src="assets/images/github.svg" alt="GitHub" width="30">
-            </a>
+            <div class="contact-info">
+                <div class="contact-item-email">
+                    <strong>Email:</strong>
+                    <a href="mailto:farid.azzam.2001@gmail.com">farid.azzam.2001@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone/WhatsApp:</strong>
+                    <span>+201110366720</span>
+                </div>
+            </div>
+
+            <div class="socialmedia" style="margin-top: 2rem;">
+                <h2 style="width: 100%; margin-bottom: 1rem; border-bottom: none; padding-bottom: 0;">Connect through
+                    social media:</h2>
+                <a href="https://www.linkedin.com/in/farid-azzam-2882051b2/" aria-label="LinkedIn" title="LinkedIn">
+                    <img src="assets/images/linkedin.svg" alt="LinkedIn" width="30">
+                </a>
+                
+                <a href="https://github.com/fazm1" aria-label="GitHub" title="GitHub">
+                    <img src="assets/images/github.svg" alt="GitHub" width="30">
+                </a>
+            </div>
         </div>
     </main>
+
 
     <footer>
         <p>&copy; 2025 Farid M. Azzam. All rights reserved.</p>
